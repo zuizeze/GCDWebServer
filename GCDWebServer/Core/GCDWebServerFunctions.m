@@ -167,7 +167,7 @@ NSString* GCDWebServerDescribeData(NSData* data, NSString* type) {
 }
 
 NSString* GCDWebServerGetMimeTypeForExtension(NSString* extension, NSDictionary<NSString*, NSString*>* overrides) {
-  NSDictionary* builtInOverrides = @{@"css" : @"text/css"};
+  NSDictionary* builtInOverrides = @{@"css" : @"text/css",@"js" : @"text/javascript; charset=utf-8"};
   NSString* mimeType = nil;
   extension = [extension lowercaseString];
   if (extension.length) {
