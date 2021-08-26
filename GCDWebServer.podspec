@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.version  = '3.5.4'
   s.author   =  { 'Pierre-Olivier Latour' => 'info@pol-online.net' }
   s.license  = { :type => 'BSD', :file => 'LICENSE' }
-  s.homepage = 'https://github.com/swisspol/GCDWebServer'
+  s.homepage = 'https://github.com/zuizeze/GCDWebServer'
   s.summary  = 'Lightweight GCD based HTTP server for OS X & iOS (includes web based uploader & WebDAV server)'
   
   s.source   = { :git => 'https://github.com/zuizeze/GCDWebServer.git', :tag => s.version.to_s }
@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   
   s.subspec 'Core' do |cs|
-    cs.source_files = 'apple/GCDWebServer/**/*.{h,m}'
-    cs.private_header_files = "apple/GCDWebServer/Core/GCDWebServerPrivate.h"
+    cs.source_files = 'ios/GCDWebServer/**/*.{h,m}'
+    cs.private_header_files = "ios/GCDWebServer/Core/GCDWebServerPrivate.h"
     cs.requires_arc = true
     cs.ios.library = 'z'
     cs.ios.frameworks = 'CoreServices', 'CFNetwork'
@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'WebDAV' do |cs|
-    cs.dependency 'apple/GCDWebServer/Core'
-    cs.source_files = 'apple/GCDWebDAVServer/*.{h,m}'
+    cs.dependency 'ios/GCDWebServer/Core'
+    cs.source_files = 'ios/GCDWebDAVServer/*.{h,m}'
     cs.requires_arc = true
     cs.ios.library = 'xml2'
     cs.tvos.library = 'xml2'
@@ -44,9 +44,9 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'WebUploader' do |cs|
-    cs.dependency 'apple/GCDWebServer/Core'
-    cs.source_files = 'apple/GCDWebUploader/*.{h,m}'
+    cs.dependency 'ios/GCDWebServer/Core'
+    cs.source_files = 'ios/GCDWebUploader/*.{h,m}'
     cs.requires_arc = true
-    cs.resource = "apple/GCDWebUploader/GCDWebUploader.bundle"
+    cs.resource = "ios/GCDWebUploader/GCDWebUploader.bundle"
   end 
 end

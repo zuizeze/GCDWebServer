@@ -1,7 +1,7 @@
 {
   "name": "gcdwebserver",
   "version": "1.0.0",
-  "description": "Overview ========",
+  "description": "Lightweight GCD based HTTP server for OS X & iOS (includes web based uploader & WebDAV server)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/zuizeze/GCDWebServer.git"
   },
-  "author": "",
+  "author": "leon",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zuizeze/GCDWebServer/issues"
   },
-  "homepage": "https://github.com/zuizeze/GCDWebServer#readme"
+  "homepage": "https://github.com/zuizeze/GCDWebServer#readme",
+  "dependencies": {
+    "react": "17.0.1",
+    "react-native": "0.64.1"
+  }
 }
