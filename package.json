@@ -1,6 +1,6 @@
 {
   "name": "gcdwebserver",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Lightweight GCD based HTTP server for OS X & iOS (includes web based uploader & WebDAV server)",
   "main": "index.js",
   "scripts": {
