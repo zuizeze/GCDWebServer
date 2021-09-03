@@ -170,7 +170,7 @@ NSString* GCDWebServerGetMimeTypeForExtension(NSString* extension, NSDictionary<
   NSDictionary* builtInOverrides = @{
     @"css" : @"text/css",
     @"js" : @"text/javascript; charset=utf-8", 
-    @"json" : @"application/json; charset=utf-8"
+    @"json" : @"application/json; charset=utf-8",
     @"html" : @"text/html; charset=utf-8",
     @"mp4" :@"application/mp4",
     @"jpg" : @"application/jpg",
@@ -180,7 +180,7 @@ NSString* GCDWebServerGetMimeTypeForExtension(NSString* extension, NSDictionary<
     @"svg" : @"image/svg+xml",
     @"bmp": @"image/bmp",
     @"cfpd" : @"text/plain",
-    @"tex" : @"text/plain",
+    @"txt" : @"text/plain",
   };
   NSString* mimeType = nil;
   extension = [extension lowercaseString];
