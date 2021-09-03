@@ -172,7 +172,6 @@ NSString* GCDWebServerGetMimeTypeForExtension(NSString* extension, NSDictionary<
     @"js" : @"text/javascript; charset=utf-8", 
     @"json" : @"application/json; charset=utf-8"
     @"html" : @"text/html; charset=utf-8",
-    @"svg" : @"image/svg",
     @"mp4" :@"application/mp4",
     @"jpg" : @"application/jpg",
     @"jpeg" : @"application/jpeg",
